@@ -1,0 +1,23 @@
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+Login:
+    path: /login
+    controller: App\Controller\SecurityController::index
+Register:
+    path: /register
+    controller: App\Controller\RegistrationController::register
+Logout:
+    path: /logout
+    controller: App\Controller\SecurityController::index
+Features:
+    path: /features
+    controller: App\Controller\HomeController::features
+Subscriptions:
+    path: /subscriptions
+    controller: App\Controller\HomeController::subscriptions
+Signup:
+    path: /add
+    controller: App\Controller\AdherantController::add
+
+

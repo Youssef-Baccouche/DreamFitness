@@ -1,0 +1,26 @@
+<html>
+<head>
+
+</head>
+<body>
+<center>
+<table border="4">
+    <tr> </tr>
+    <tr><th>id</th><th>nom</th><th>prenom</th><th>sexe</th><th>date de naissance</th><th>Adresse</th><th>Numero de tel</th><th>E-mail</th></tr>
+    <tr{% for p in list %}>
+        <td>{{ p.id }}</td>
+    <td>{{ p.Nom }}</td>
+        <td>{{ p.Prenom }}</td>
+         <td>{{ p.Sexe }}</td>
+          <td>{{ p.DateDeNaissance|date('Y-m-d')  }}</td>
+          <td>{{ p.Adresse }}</td>
+          <td>{{ p.NumeroDeTel }}</td>
+          <td>{{ p.eMail }}</td>
+
+    </tr {% endfor %}>
+
+</table>
+
+</center>
+</body>
+</html>
